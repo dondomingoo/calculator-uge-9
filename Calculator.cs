@@ -25,7 +25,12 @@ namespace calculator
 
         public double Divide(int a, int b)
         {
+            if (b == 0)
+            {
+                throw new DivideByZeroException();
+            }
             return (double)a / (double)b;
+
         }
 
 

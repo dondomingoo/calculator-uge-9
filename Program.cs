@@ -41,12 +41,6 @@
 
                     }
 
-
-
-
-
-
-
                 }
                 catch (FormatException e) // Hvis brugeren indtaster noget andet end et tal, vil vi fange FormatException og udskrive en fejlbesked.
                 {
@@ -63,14 +57,10 @@
                     Console.WriteLine("Der skete en fejl, prøv igen");
                     continue;
                 }
-
-
-
-
-                
+        
                     Console.WriteLine("Vil du prøve igen? (ja/nej)");
-                    string answer = Console.ReadLine();
                     Console.WriteLine("---------------------------------------------------");
+                    string answer = Console.ReadLine();
                     Console.Clear();
                     if (answer.ToLower() == "nej")
                     {
@@ -81,19 +71,17 @@
             while (keepRunning);
 
             Console.WriteLine("Farvel");
-
-
-
-
-            //Console.WriteLine(calculator.Add(5, 3));
-            //Console.WriteLine(calculator.Subtract(5, 3));
-            //Console.WriteLine(calculator.Multiply(5, 3)); // denne 
-            //Console.WriteLine(calculator.Divide(5, 3)); // denne metode returnerer 1.0, da vi deler to integers, og derfor returnerer den en integer.
-            //Console.ReadKey();
-
-
-
         }
 
     }
 }   
+ 
+
+
+
+
+//Console.WriteLine(calculator.Add(5, 3));
+            //Console.WriteLine(calculator.Subtract(5, 3));
+            //Console.WriteLine(calculator.Multiply(5, 3)); // denne 
+            //Console.WriteLine(calculator.Divide(5, 3)); // denne metode returnerer 1.0, da vi deler to integers, og derfor returnerer den en integer.
+            //Console.ReadKey();
